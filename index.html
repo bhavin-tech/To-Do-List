@@ -1,0 +1,38 @@
+<!-- Developed a full-stack Notes App using HTML, CSS, and JavaScript for the front-end, and Python for the back-end.
+Implemented CRUD (Create, Read, Update, Delete) operations with a user-friendly interface and responsive design. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To List</h1>
+        <div class="input-container">
+            <input type="text" id="noteTitle" placeholder="Enter title">
+            <textarea id="noteDescription" placeholder="Enter description"></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </div>
+        <table id="notesTable">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date & Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Notes will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
